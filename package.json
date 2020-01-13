@@ -10,7 +10,7 @@
     "faker": "^4.1.0",
     "fp-ts": "1",
     "io-ts": "1",
-    "io-ts-serverless-handler": "^1.0.4",
+    "io-ts-serverless-handler": "https://github.com/NoxHarmonium/io-ts-serverless-handler.git#coerce-values",
     "lodash": "^4.17.15",
     "source-map-support": "^0.5.10"
   },

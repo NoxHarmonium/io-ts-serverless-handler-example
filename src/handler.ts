@@ -1,8 +1,7 @@
 import * as t from "io-ts";
 import { chunk} from "lodash";
-import { configureWrapper } from "io-ts-serverless-handler";
+import { configureWrapper, coerce } from "io-ts-serverless-handler";
 import 'source-map-support/register';
-import { numberFromStringCodec } from "./codecs";
 import { products } from "./data";
 
 const codecHandler = configureWrapper({
@@ -11,8 +10,8 @@ const codecHandler = configureWrapper({
 
 export const listProducts = codecHandler({
   queryStringParameters: t.partial({
-    pageNumber: numberFromStringCodec,
-    pageSize: numberFromStringCodec
+    pageNumber: coerce(t.number),
+    pageSize: coerce(t.number)
   })
 }, async ({
   queryStringParameters: {
@@ -29,7 +28,7 @@ export const listProducts = codecHandler({
 
 export const getProduct = codecHandler({
   pathParameters: t.type({
-    id: numberFromStringCodec,
+    id: coerce(t.number),
   }
 )}, async ({
   pathParameters: {

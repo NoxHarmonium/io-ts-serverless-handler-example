@@ -21,13 +21,13 @@ provider:
 
 functions:
   listProducts:
-    handler: handler.listProducts
+    handler: src/handler.listProducts
     events:
       - http:
           method: get
           path: products
   getProduct:
-    handler: handler.getProduct
+    handler: src/handler.getProduct
     events:
       - http:
           method: get

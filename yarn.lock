@@ -2895,10 +2895,9 @@ into-stream@^3.1.0:
     from2 "^2.1.1"
     p-is-promise "^1.1.0"
 
-io-ts-serverless-handler@^1.0.4:
+"io-ts-serverless-handler@https://github.com/NoxHarmonium/io-ts-serverless-handler.git#coerce-values":
   version "1.0.4"
-  resolved "https://registry.yarnpkg.com/io-ts-serverless-handler/-/io-ts-serverless-handler-1.0.4.tgz#5c3ab4017f5a9abbd7d5d482cd6c01d4abbe5526"
-  integrity sha512-c/Gg9KDglk1LZiBI/jWrlbyKUWweAswM/T0LEiCZsnCDAKb+mabP4P4bbPvdMAl5vMAtQJxWg9/1ckI1rvNb8w==
+  resolved "https://github.com/NoxHarmonium/io-ts-serverless-handler.git#776eac2b50fd463d1e08d307b668aeb2ba4c3b63"
 
 io-ts@1:
   version "1.10.4"
