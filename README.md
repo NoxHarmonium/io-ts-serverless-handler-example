@@ -1,5 +1,5 @@
 # io-ts-serverless-handler-example
-A project to demonstrate how io-ts-serverless-handler works
+A project to demonstrate how [io-ts-serverless-handler](https://github.com/NoxHarmonium/io-ts-serverless-handler) works
 
 # Running
 
